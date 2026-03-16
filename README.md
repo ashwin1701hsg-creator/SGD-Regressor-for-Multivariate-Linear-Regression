@@ -20,6 +20,8 @@ To write a program to predict the price of the house and number of occupants in 
 ```
 /*
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
+```
+```
 from sklearn.linear_model import SGDRegressor
 import numpy as np
 import matplotlib.pyplot as plt
@@ -48,9 +50,11 @@ plt.ylabel("Predicted y")
 plt.title("Actual vs Predicted (SGDRegressor)")
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')  # Perfect prediction line
 plt.show()
-
+```
+```
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
 Developed by: Ashwin H
+
 RegisterNumber: 25003420 
 */
 ```
