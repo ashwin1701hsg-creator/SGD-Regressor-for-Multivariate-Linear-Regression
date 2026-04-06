@@ -30,18 +30,17 @@ import matplotlib.pyplot as plt
 X = np.array([[1,2],[2,1],[3,4],[4,3],[5,5]])
 y = np.array([5,6,9,10,13])
 
-# Create model
+# Create model and train model
 model = SGDRegressor(max_iter=1000, eta0=0.01, learning_rate='constant')
-
-# Train model
 model.fit(X, y)
+
+# Predict
+y_pred = model.predict(X)
 
 # Check learned weights
 print("Weights:", model.coef_)
 print("Bias:", model.intercept_)
 
-# Predict
-y_pred = model.predict(X)
 
 # Plot Actual vs Predicted
 plt.scatter(y, y_pred)
