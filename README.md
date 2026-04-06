@@ -44,10 +44,10 @@ print("Bias:", model.intercept_)
 
 # Plot Actual vs Predicted
 plt.scatter(y, y_pred)
+plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')  # Perfect prediction line
 plt.xlabel("Actual y")
 plt.ylabel("Predicted y")
 plt.title("Actual vs Predicted (SGDRegressor)")
-plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')  # Perfect prediction line
 plt.show()
 ```
 ```
